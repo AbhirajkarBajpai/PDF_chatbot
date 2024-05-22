@@ -1,0 +1,110 @@
+/* chat.css */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 87vh;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0 2rem;
+}
+
+.message {
+  margin-bottom: 0.5rem;
+}
+
+.user-message {
+  text-align: left;
+  color: #007bff;
+}
+
+.ai-message {
+  text-align: left;
+  color: #28a745;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin: 0 4rem 2rem;
+}
+
+.input-box input {
+  flex: 1;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.input-box button {
+  padding: 0.5rem 1rem;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.input-box button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1000px) {
+  .chat-box {
+    margin: 0 1rem;
+  }
+
+  .input-box {
+    margin: 0 2rem 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .chat-box {
+    margin: 0 0.5rem;
+  }
+
+  .input-box {
+    margin: 0 1rem 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .chat-box {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .input-box {
+    margin: 0 0.5rem 1rem;
+    padding: 0.25rem;
+  }
+
+  .input-box button {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .input-box input {
+    padding: 0.25rem;
+  }
+
+  .input-box button {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.25rem;
+  }
+}
